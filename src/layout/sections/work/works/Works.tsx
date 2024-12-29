@@ -26,7 +26,7 @@ const StyledWorks = styled.div`
     width:50%;
     max-width:550px;
     max-height:670px;
-    margin:10px
+    margin:9px
 
     
 `
