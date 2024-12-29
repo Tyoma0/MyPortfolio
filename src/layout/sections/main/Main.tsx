@@ -20,7 +20,7 @@ export const Main = () => {
     );
 };
 
-const FirstDiv = styled.div`
+const FirstDiv = styled.section`
     height:100vh;
     background-color:#0F1624;
 `
@@ -34,9 +34,9 @@ const Foto = styled.img`
 const MainTitle = styled.h1`
     
 `
-const MainP = styled.h1`
+const MainP = styled.p`
     
 `
-const Mainbutton = styled.h1`
+const Mainbutton = styled.button`
     
 `
