@@ -10,11 +10,11 @@ export const Skill = () => {
     return (
         <StyledSkill>
             <SectionTitle>Technologies</SectionTitle>
-            <FlexWrapper>
-              <Skills />
-              <Skills />
-              <Skills />
-              <Skills />
+            <FlexWrapper direction='column'>
+              <Skills width={68} />
+              <Skills width={39} />
+              <Skills width={20} />
+              <Skills width={10} />
             </FlexWrapper>
             <StyledDiv>
             <StyledSpan>Additional technologies and skills</StyledSpan>
