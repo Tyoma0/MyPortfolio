@@ -11,13 +11,13 @@ export const Skill = () => {
         <StyledSkill>
             <SectionTitle>Technologies</SectionTitle>
             <FlexWrapper direction='column'>
-              <Skills width={68} />
-              <Skills width={39} />
-              <Skills width={20} />
-              <Skills width={10} />
+              <Skills text='Html' width={78} />
+              <Skills text='Css, Sass' width={68} />
+              <Skills text='React' width={53} />
+              <Skills text='Styled components' width={68} />
             </FlexWrapper>
             <StyledDiv>
-            <StyledSpan>Additional technologies and skills</StyledSpan>
+            <StyledSpan>Additional technol text=''gies and skills</StyledSpan>
             <StyledUl>
                 <StyledLi><Icon  iconId={'group'}/></StyledLi>
                 <StyledLi><Icon  iconId={'gitHub2'}/></StyledLi>
