@@ -17,7 +17,7 @@ export const Skill = () => {
               <Skills text='Styled components' width={68} />
             </FlexWrapper>
             <StyledDiv>
-            <StyledSpan>Additional technol text=''gies and skills</StyledSpan>
+            <StyledSpan>Additional technolgies and skills</StyledSpan>
             <StyledUl>
                 <StyledLi><Icon  iconId={'group'}/></StyledLi>
                 <StyledLi><Icon  iconId={'gitHub2'}/></StyledLi>
