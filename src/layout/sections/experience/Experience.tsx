@@ -5,7 +5,7 @@ import { SectionTitle } from '../../../components/SectionTitle';
 export const Experience = () => {
     return (
         <StyledExperience>
-            
+            <SectionTitle></SectionTitle>
         </StyledExperience>
     );
 };
