@@ -1,10 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 
-export const TextLine = () => {
+
+type TextTypeProps={
+    text:string
+}
+
+export const TextLine = (props:TextTypeProps) => {
     return (
-        <div>
-            
-        </div>
+        <StyledText>
+            {props.text}
+        </StyledText>
     );
 };
 
+const StyledText = styled.p`
+     font-size: 14px;
+    color: #ffff;
+    margin-top: 30px; /* Отступ между точкой и текстом */
+    text-align: center;
+`

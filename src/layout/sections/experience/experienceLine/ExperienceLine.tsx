@@ -1,24 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import { TextLine } from './textLine/TextLine';
 
 export const ExperienceLine = () => {
     return (
         <Timeline>
              <TimelinePoint>
         <TimelineDate>2017</TimelineDate>
-        <TimelineText>Начало проекта</TimelineText>
+        <TextLine text='Lorem dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin'/>
     </TimelinePoint>
     <TimelinePoint>
         <TimelineDate>2019</TimelineDate>
-        <TimelineText>Начало проекта</TimelineText>
+        <TextLine text='Lorem dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin'/>
     </TimelinePoint>
     <TimelinePoint>
         <TimelineDate>2021</TimelineDate>
-        <TimelineText>Начало проекта</TimelineText>
+        <TextLine text='Lorem dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin'/>
     </TimelinePoint>
     <TimelinePoint>
         <TimelineDate>2023</TimelineDate>
-        <TimelineText>Начало проекта</TimelineText>
+        <TextLine text='Lorem dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin'/>
     </TimelinePoint>
         </Timeline>
     );
@@ -54,11 +55,3 @@ const TimelineDate = styled.div`
     position: absolute;
     top:-90%
     `
-const TimelineText = styled.div`
-    font-size: 14px;
-    color: #ffff;
-    margin-top: 30px; /* Отступ между точкой и текстом */
-    text-align: center;
-    
-
-`
