@@ -18,7 +18,7 @@ export const Skills = (props: SkillsTypeProps) => {
       <Title>{props.text}</Title>
       <StyledIndicator>
         <StyledDiv width={props.width} inView={inView}>
-          <StyledDiv2>.</StyledDiv2>
+          <StyledDiv2> </StyledDiv2>
         </StyledDiv>
       </StyledIndicator>
     </MainDiv>
@@ -69,4 +69,5 @@ const StyledDiv2 = styled.div`
   font-weight: 600;
   padding: 0 15px;
   float: right;
+  
 `;

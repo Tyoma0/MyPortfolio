@@ -13,7 +13,7 @@ export const Skill = () => {
             <Container>
             <SectionTitle>Technologies</SectionTitle>
             <FlexWrapper direction='column'>
-            <Skills text='Html' width={78} />
+              <Skills text='Html' width={78} />
               <Skills text='Css, Sass' width={68} />
               <Skills text='React' width={53} />
               <Skills text='Styled components' width={68} />

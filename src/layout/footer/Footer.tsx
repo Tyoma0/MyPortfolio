@@ -11,8 +11,8 @@ export const Footer = () => {
         <StyledFooter>
             <Container>
             <FlexWrapper justify='space-around' align='center'>
-            <FooterInf text='Call me: 123-456-789'/>
-            <FooterInf text='Email: xxx@xyz.com'/>
+            <FooterInf  text='Call me: ' link='123-456-789'/>
+            <FooterInf  text='Email: ' link='xxx@xyz.com'/>
             <SocialMedia/>
             </FlexWrapper>
             </Container>                      

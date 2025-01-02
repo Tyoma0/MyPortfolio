@@ -18,7 +18,11 @@ export const Main = () => {
                 <MainP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</MainP>
                 <Button>Let’s Begin</Button>
             </DivText>
-                <Foto src={foto} alt="" />
+            <FotoWrapper>
+            <Foto src={foto} alt="" />
+            <GradientBorder />
+            </FotoWrapper>
+                
             </FlexWrapper>
 </Container>            
         </FirstDiv>                            
@@ -36,16 +40,50 @@ const FirstDiv = styled.section`
 `
 
 const Foto = styled.img`
-    width:380px;
-    height:450px;
-    object-fit:cover;
-    border-top-left-radius:50px;
-    border-bottom-right-radius:50px;
-    border:5px solid ;
-    border-image: linear-gradient(to right, #945dd6, #6978d1, #13adc7) 1;
-    box-shadow: 10px 10px 40px 2px rgba(53, 189, 223, 0.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 51px;
+    border-bottom-right-radius: 51px;
+    
+`;
+const FotoWrapper = styled.div`
+    position: relative;
+    width: 380px;
+    height: 450px;  
+    overflow: hidden; 
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 5px 5px 50px 5px rgba(53, 189, 223, 0.5);
+`;
+const GradientBorder = styled.div`
+position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    pointer-events: none;
+    z-index: 1;
 
-` 
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, #945dd6, #6978d1, #13adc7);
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        padding: 5px;
+    }
+`;
+
 
 const MainTitle = styled.h1`
 font-size: 54px;

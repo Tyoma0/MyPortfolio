@@ -15,7 +15,7 @@ font-family:'Poppins';
 transition: transform 0.3s ease-in-out;
 &:hover{
    transform:scale(1.1);
-   cursor:pointer
+   cursor:pointer;
 }
 
 
