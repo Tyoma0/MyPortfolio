@@ -23,4 +23,7 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
     background-color:#0F1624;
     min-height:20vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 `

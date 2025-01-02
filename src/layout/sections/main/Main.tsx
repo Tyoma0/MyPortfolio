@@ -6,9 +6,11 @@ import { Button } from '../../../components/Button';
 import { theme } from '../../../styles/Theme';
 import { Container } from '../../../components/Container';
 
+
 export const Main = () => {
     return (
         <FirstDiv>
+            
 <Container>
 <FlexWrapper align='center' justify='space-between'>
             <DivText>
@@ -41,7 +43,7 @@ const Foto = styled.img`
     border-bottom-right-radius:50px;
     border:5px solid ;
     border-image: linear-gradient(to right, #945dd6, #6978d1, #13adc7) 1;
-    
+    box-shadow: 10px 10px 40px 2px rgba(53, 189, 223, 0.5);
 
 ` 
 

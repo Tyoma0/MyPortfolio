@@ -7,9 +7,11 @@ import { Skill } from './layout/sections/skill/Skill';
 import { Footer } from './layout/footer/Footer';
 import { Experience } from './layout/sections/experience/Experience';
 
+
 function App() {
     return (
         <div className="App">
+            
            <Header/>
            <Main/>
            <Work/>

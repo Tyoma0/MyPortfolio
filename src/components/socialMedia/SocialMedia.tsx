@@ -21,6 +21,12 @@ max-height:32px;
         gap:25px;
         
     }
+    li{
+        transition: transform 0.3s ease-in-out;
+    }
+    li:hover{
+        transform:scale(1.1);
+    }
     
    
 `

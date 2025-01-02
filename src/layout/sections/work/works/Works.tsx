@@ -22,28 +22,36 @@ export const Works = (props:WorksPropsType) => {
 
 
 const StyledWorks = styled.div`
+border:1px solid rgba(163, 157, 157, 1);
+
     background-color:#0F1624;
-    width:50%;
+    width:48%;
+    
     min-width:550px;
     min-height:670px;
     border-top-left-radius:50px;
     border-bottom-right-radius:50px;
-    margin:30px 0;
     display: flex;
     flex-direction:column;
     align-items:flex-start;
-    justify-content:space-around
+    justify-content:space-around;
+    margin-bottom:60px;
 
 
     
 `
 const Image = styled.img`
-     height:280px;
+     max-height:280px;
+     max-width:500px;
      width:100%;
-     object-fit:cover;
-     padding: 0 25px;
+     object-fit:cover;     
      border-top-left-radius:24px;
      border-bottom-right-radius:8px;
+     border-bottom-left-radius:8px;
+     border-top-right-radius:8px;
+     margin-left:27px
+     
+     
    
 `
 const Title = styled.h3`
@@ -56,6 +64,8 @@ const Text = styled.p`
 `
 const Link = styled.a`
 font-size:20px;
+transition: transform 0.3s ease-in-out;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 min-height:60px;
 min-width:200px ;
 margin-left:25px;
@@ -64,4 +74,8 @@ justify-content:center;
 align-items:center;
 border-radius:83px;
 background: linear-gradient(to right, #945dd6, #6978d1, #13adc7);
+&:hover{
+    transform:scale(1.1);
+    
+}
 `

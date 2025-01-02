@@ -27,13 +27,22 @@ body {
 a{
     text-decoration:none;
 color: ${theme.colors.font};
+
+
+
 }
+
 ul{
     list-style: none;
 }
 
-section{
+
+ 
+ 
+
+ section{
     padding:100px 0;
+    
 }
 
 section:nth-of-type(odd){
