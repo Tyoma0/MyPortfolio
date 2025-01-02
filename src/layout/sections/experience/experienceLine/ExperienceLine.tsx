@@ -4,8 +4,9 @@ import { TextLine } from './textLine/TextLine';
 
 export const ExperienceLine = () => {
     return (
+        <MainDiv>
         <Timeline>
-             <TimelinePoint>
+        <TimelinePoint>
         <TimelineDate>2017</TimelineDate>
         <TextLine text='Lorem dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin'/>
     </TimelinePoint>
@@ -22,22 +23,30 @@ export const ExperienceLine = () => {
         <TextLine text='Lorem dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin'/>
     </TimelinePoint>
         </Timeline>
+        </MainDiv>
+       
     );
 };
 
+const MainDiv = styled.div`
+    display: flex;
+    align-items:center;
+    justify-content:center
+`
+
 const Timeline = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    width: 80%;
+    width: 880px;
     position: relative;
-   background-color:#ffff;
-   max-height:8px;
-   background: linear-gradient(to right, #945dd6, #6978d1, #13adc7);        
+    background-color:#ffff;
+    max-height:8px;
+    background: linear-gradient(to right, #945dd6, #6978d1, #13adc7);        
     
 `
 const TimelinePoint = styled.div`
-     position: relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,11 +56,12 @@ const TimelinePoint = styled.div`
     max-height:25px;
     border-radius:50%
 `
-const TimelineDate = styled.div`
-    font-weight: bold;
-    
+const TimelineDate = styled.span`
+    font-weight: bold;    
     text-align: center; 
-    color:#ffff;
     position: absolute;
-    top:-90%
+    top:-140%;
+    font-size:26px;
+    
+
     `

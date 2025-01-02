@@ -31,7 +31,9 @@ const Title = styled.span`
   color: #ffff;
 `;
 
-const MainDiv = styled.div``;
+const MainDiv = styled.div`
+
+`;
 
 const animatePositive = (width: number) => keyframes`
   0% {
@@ -65,7 +67,6 @@ const StyledDiv = styled.div<{ width: number; inView: boolean }>`
 const StyledDiv2 = styled.div`
   font-size: 22px;
   font-weight: 600;
-  color: #ffffff;
   padding: 0 15px;
   float: right;
 `;

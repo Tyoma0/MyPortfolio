@@ -16,7 +16,9 @@ export const TextLine = (props:TextTypeProps) => {
 
 const StyledText = styled.p`
      font-size: 14px;
-    color: #ffff;
     margin-top: 30px; /* Отступ между точкой и текстом */
     text-align: center;
+    min-width:260px;
+min-height:135px;
+
 `
